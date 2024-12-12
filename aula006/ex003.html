@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: rgba(128, 128, 128, 0.578);
+            color: white;
+            font-size: 20pt;
+        }
+        h1 {
+            color: rgb(31, 31, 175);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Já me livrei da maldição!!</p>
+    <script>
+        //Number.parseFloat numero quebrado 
+        //Number.parseInt numero inteiro
+
+        /*var n1 = parseFloat(prompt('Digite um número:'))
+        var n2 = parseFloat(prompt('Digite outro número:'))
+
+        var n1 = parseInt(prompt('Digite um número:'))
+        var n2 = parseInt(prompt('Digite outro número:'))  
+        */
+        var n1 = Number(prompt('Digite um número:')) //String
+        var n2 = Number(prompt('Digite outro número:')) //String
+
+        var s = n1 + n2
+
+        alert(`A soma dos valores ${n1} e ${n2} é igual a ${s}`)
+
+        /*alert('A soma dos valores é ' + s)
+
+        alert('A soma dos valores é ' + String(s)) //converter para string
+
+        // + adição (number + number)
+        // + concatenação (string + string)
+
+        /* Exemplo feito no NodeJs
+
+            > nome = 'Fabrício'
+            'Fabrício'
+            > idade = 36
+            36
+            > nota = 10
+            10
+            > nome
+            'Fabrício'
+            > idade
+            36
+            > nota
+            10
+            > 
+            > 'O aluno ' + nome + ' com ' + idade + ' anos ' + ' tirou a nota ' + nota
+            'O aluno Fabrício com 36 anos  tirou a nota 10'
+            > `O aluno ${nome} com ${idade} anos, tirou a nota ${nota}`
+            'O aluno Fabrício com 36 anos, tirou a nota 10'
+            > 
+        */
+
+    </script>
+</body>
+</html>
