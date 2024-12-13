@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições e laços de repetição</title>
+</head>
+<body>
+    <h1>Curos JS básico - Condições e laços de repetição</h1>
+    <script>
+        let lista = [];
+        let novoItem = prompt("Digite o nome do item ou - se não quiser adicionar");
+
+        while (novoItem != "-") {
+            lista.push(novoItem);
+            novoItem = prompt("Digite o nome do item ou - se não quiser adicionar");
+        }
+
+        if (lista.length == 0) {
+            alert("A lista está vazia!");
+        }
+
+        else {
+            alert("Você deve comprar os itens a seguir:");
+            for (let i = 0; i < lista.length; i++) {
+                alert(lista[i]);
+            }
+        }
+    </script>
+
+</body>
+</html>
