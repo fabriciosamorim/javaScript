@@ -9,23 +9,29 @@
     <h1>Curos JS básico - Condições e laços de repetição</h1>
     <script>
         let lista = [];
-        let novoItem = prompt("Digite no nome item ou - se para sair");
-
+        let novoItem = prompt(
+            "Digite o nome do item ou (-) se quiser parar de adicionar"
+        );
         while (novoItem != "-") {
             lista.push(novoItem);
-            novoItem = prompt ("Digite no nome item ou (-) para sair");
+            novoItem = prompt("Digite o nome do item ou (-) se quiser parar de adicionar");
         }
 
         if (lista.length == 0) {
-            alert("A lista está vazia!");
+            alert("A lista está vazia");
+        } else {
+            alert ("Temos vários itens para comprar")
+            alert ("Segue itens adicionados ao carrinho de compras:");
+            for (let itens = 0; itens < lista.length; itens++)
+        {
+            alert (lista [itens]); 
+        }
+        {
+            alert ("Fim da lista de Compras")
+        }
         }
 
-        else {
-            alert("Voce deve comprar esses itens:");
-            for (let i = 0; i < lista.length; i++) {
-                alert(lista[i]);
-            }
-        }
+
     </script>
 
     
