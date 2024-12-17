@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calculator {
+            background-color: rgb(137, 183, 195);  
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px 0px;
+            border: 2px solid rgba(0, 0, 0, 0.357);
+            border-radius: 10px;
+            text-align: center;
+        }
+    
+        input[type="text"] {
+            width: 220px;
+            padding: 10px;
+            border: px solid rgba(0, 0, 0, 0.357);
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: black;
+        }
+    
+        button {
+            width: 50px;
+            height: 40px;
+            font-size: 16px;
+            margin: 5px;
+            
+        }
+
+        .zero {
+            width: 110px;
+            height: 40px;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .c {
+            width: 175px;
+            height: 40px;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .cor {
+            background-color: rgba(205, 184, 92, 0.456);
+        }
+      </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="result" disabled>
+    <br>
+    <button onclick="calculator('7')">7</button>
+    <button onclick="calculator('8')">8</button>
+    <button onclick="calculator('9')">9</button>
+    <button class="cor" onclick="calculator('/')">/</button>
+    <br>
+    <button onclick="calculator('4')">4</button>
+    <button onclick="calculator('5')">5</button>
+    <button onclick="calculator('6')">6</button>
+    <button class="cor" onclick="calculator('*')">*</button>
+    <br>
+    <button onclick="calculator('1')">1</button>
+    <button onclick="calculator('2')">2</button>
+    <button onclick="calculator('3')">3</button>
+    <button class="cor" onclick="calculator('-')">-</button>
+    <br>
+    <button class="zero" onclick="calculator('0')">0</button>
+    <button  onclick="calculator('.')">.</button>
+    <button class="cor" onclick="calculate()">=</button>
+    
+    
+    <button class="c" onclick="clearInput()">C</button>
+
+    <button class="cor" onclick="calculator('+')">+</button>
+  </div>
+
+  <script>
+    let currentInput = "";
+
+    function calculator(value) {
+      currentInput += value;
+      document.getElementById("result").value = currentInput;
+    }
+
+    function calculate() {
+      let result = eval(currentInput);
+      document.getElementById("result").value = result;
+      currentInput = result.toString();
+    }
+
+    function clearInput() {
+      currentInput = "";
+      document.getElementById("result").value = "";
+    }
+  </script>
+</body>
+</html>
+    
+</body>
+</html>
