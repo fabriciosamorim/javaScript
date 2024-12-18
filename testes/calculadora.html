@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
     <style>
         .calculator {
             background-color: rgb(137, 183, 195);  
@@ -18,7 +18,6 @@
         input[type="text"] {
             width: 220px;
             padding: 10px;
-            border: px solid rgba(0, 0, 0, 0.357);
             margin-bottom: 10px;
             font-size: 16px;
             color: black;
@@ -40,6 +39,7 @@
         }
 
         .c {
+            background-color: rgba(238, 237, 231, 0.261);
             width: 175px;
             height: 40px;
             font-size: 16px;
@@ -72,12 +72,9 @@
     <br>
     <button class="zero" onclick="calculator('0')">0</button>
     <button  onclick="calculator('.')">.</button>
-    <button class="cor" onclick="calculate()">=</button>
-    
-    
-    <button class="c" onclick="clearInput()">C</button>
-
     <button class="cor" onclick="calculator('+')">+</button>
+    <button class="c" onclick="clearInput()">C</button>
+    <button class="cor" onclick="calculate()">=</button>  
   </div>
 
   <script>
