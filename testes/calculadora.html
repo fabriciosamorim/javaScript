@@ -21,14 +21,15 @@
             margin-bottom: 10px;
             font-size: 16px;
             color: black;
+            border: 1px 1px solid rgba(0, 0, 0, 0.64);
+            background-color: whitesmoke;
         }
     
         button {
             width: 50px;
             height: 40px;
             font-size: 16px;
-            margin: 5px;
-            
+            margin: 5px; 
         }
 
         .zero {
@@ -44,10 +45,12 @@
             height: 40px;
             font-size: 16px;
             margin: 5px;
+            border: 1px 1px solid rgba(0, 0, 0, 0.375);
         }
 
-        .cor {
+        .corOperadores {
             background-color: rgba(205, 184, 92, 0.456);
+            border: 1px 1px solid rgba(0, 0, 0, 0.375); 
         }
       </style>
 </head>
@@ -58,23 +61,23 @@
     <button onclick="calculator('7')">7</button>
     <button onclick="calculator('8')">8</button>
     <button onclick="calculator('9')">9</button>
-    <button class="cor" onclick="calculator('/')">/</button>
+    <button class="corOperadores" onclick="calculator('/')">/</button>
     <br>
     <button onclick="calculator('4')">4</button>
     <button onclick="calculator('5')">5</button>
     <button onclick="calculator('6')">6</button>
-    <button class="cor" onclick="calculator('*')">*</button>
+    <button class="corOperadores" onclick="calculator('*')">*</button>
     <br>
     <button onclick="calculator('1')">1</button>
     <button onclick="calculator('2')">2</button>
     <button onclick="calculator('3')">3</button>
-    <button class="cor" onclick="calculator('-')">-</button>
+    <button class="corOperadores" onclick="calculator('-')">-</button>
     <br>
     <button class="zero" onclick="calculator('0')">0</button>
     <button  onclick="calculator('.')">.</button>
-    <button class="cor" onclick="calculator('+')">+</button>
+    <button class="corOperadores" onclick="calculator('+')">+</button>
     <button class="c" onclick="clearInput()">C</button>
-    <button class="cor" onclick="calculate()">=</button>  
+    <button class="corOperadores" onclick="calculate()">=</button>  
   </div>
 
   <script>
